@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- === import tailwind css === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- === import style css external === -->
+     <link rel="stylesheet" href="css/fontGlobal.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#070C23]">
+    <div class="component-bar absolute z-10">
+        <!-- === navbar component === -->
+        <nav class="bg-[#14181D] fixed z-10 text-white w-full px-4 py-3 shadow">
+            <div class=" mx-auto px-5 flex items-center justify-between">
+              <a href="#" class="text-xl font-bold">
+                <img src="assets/svg/logo.svg" alt="Stikoverse Logo" class="w-full">
+              </a>
+      
+              <div class="flex items-center space-x-4">
+                <!-- === button checkout === -->
+                <button class=" text-white font-bold rounded hover:bg-blue-300/40 transition-all -py-1 rounded-2xl text-center">
+                  <img src="assets/svg/asset_navbar/iconCheckout.svg" alt="Checkout">
+                </button>
+                <!-- === akhir button checkout === -->
+
+                <!-- === element coin === -->
+                <a href="#" class=" flex gap-3 hover:bg-blue-300/40 items-center rounded-2xl transition-all py-2 px-4 rounded-2xl">
+                <img src="assets/svg/asset_navbar/iconCoin.svg" alt="Coin">
+                <span class="coin-navbar outfit-normal">1.220</span>
+                </a>
+                 <!-- === end element coin === -->
+
+                 <!-- === element website === -->
+                <a href="#" class="text-white font-bold py-2 px-4 rounded">
+                  <img class="hover:bg-blue-300/40 rounded-2xl transition-all" src="assets/svg/asset_navbar/iconWebiste.svg" alt="iconWebsite">
+                </a>
+                <!-- === end element webiste === -->
+
+                 <!-- === element profile === -->
+                 <a href="#" class=" hover:bg-blue-300/40 rounded-2xl transition-all text-white outfit-normal fw-[100] flex items-center  gap-3 font-bold py-2 px-4 rounded">
+                    <img src="assets/svg/asset_navbar/iconProfile.svg" alt="iconWebsite"/> <span>Addin Ashary</span>
+                  </a>
+                  <!-- === end element profile === -->
+
+              </div>
+            </div>
+        </nav>
+        <!-- === akhir navbar component === -->
+        
+        <!-- === component sidebar === -->
+        <nav class="main-menu">
+            <ul>
+                <!-- === list 1 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconMessage.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                            Live Discussion
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 1 ===  -->
+
+                <!-- === list 2 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconLamp.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                          UpSkill
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 2 ===  -->
+
+                <!-- === list 3 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconGraduate.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                            Quiz &nbsp; <span class="bg-blue-700 text-[13px] text-white px-3 py-1 rounded">New</span>
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 3 ===  -->
+
+                <!-- === list 4 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconGame.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                           Minigame &nbsp; <span class="bg-red-700 text-[13px] text-white px-3 py-1 rounded">Live</span>
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 4 ===  -->
+
+                <!-- === list 5 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconBook.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                           Library
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 5 ===  -->
+
+                <!-- === list 6 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconNews.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                          Blog
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 6 ===  -->
+
+                <!-- === list 7 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconInfo.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                           About
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 7 ===  -->
+
+                <!-- === list 8 ===  -->
+                <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconPay.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                            Top-up
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 8 ===  -->
+
+                 <!-- === list 9 ===  -->
+                 <li>
+                    <a href="">
+                        <img src="assets/svg/asset_sidebar/iconCheckout.svg" alt="" class="nav-icon">
+                        <span class="nav-text">
+                            Marketplace
+                        </span>
+                    </a>
+                </li>
+                <!-- === end list 9 ===  -->
+                
+            </ul>
+        </nav>
+        <!-- === akhir component sidebar === -->
+    </div>
+    <div class="body-content flex-1 pt-28 text-white">
+        <div class="banner">
+            <img src="assets/svg/asset_body/bannerColor.svg" class="w-full" alt="Banner">
+        </div>
+       
+            <div class="bg-shape w-full bg-[#0C1014] h-full px-12 md:px-24 lg:px-44">
+                <div class="content flex justify-between items-start gap-20">
+                    <div class="relative">
+                        <div class="profile px-10 absolute -top-28 ">
+                            <img src="assets/svg/asset_body/profile.svg" class="w-[200px]" alt="Profile">
+                        </div>
+                        <div class="items-center py-36">
+                            <div class="flex gap-5 py-3" >
+                                <div class="bg-[#1F3399] flex gap-3 px-5 py-2 rounded-[5px]" > <img src="assets/svg/asset_body/iconProfile.svg" alt="Icon Profile">
+                                    <div>Mahasiswa</div>
+                                </div>
+                                <div class="bg-[#551F99] flex gap-3 px-5 py-2 rounded-[5px]" > <img src="assets/svg/asset_body/iconGame.svg" alt="Icon Profile">
+                                    <div>Creator</div>
+                                </div>
+                            </div>
+                            <h1 class="name flex items-end "><span class="text-[40px]"> Addin Ashary</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-[#2EA9E5] text-[30px]">@addinashary</span></h1>
+                            <div class="text-2xl py-2">
+                                <span> <span class="text-[#A3B7CC]">3 </span> Following</span>
+                                <span> <span class="text-[#A3B7CC]">4k </span> Followers</span>
+                            </div>
+                            <div class="flex items-center gap-10 py-10">
+                                <span><img src="assets/svg/asset_body/iconOne.svg" alt="icon"></span>
+                                <span><img src="assets/svg/asset_body/iconDuo.svg" alt="icon"></span>
+                                <span><img src="assets/svg/asset_body/iconThree.svg" alt="icon"></span>
+                                <span><img src="assets/svg/asset_body/iconSport.svg" alt="icon"></span>
+                                <span class="p-7 box rounded-2xl"><img src="assets/svg/asset_body/iconPlus.svg" alt=""></span>
+                            </div>
+                            <div class="box2 py-10 flex justify-center items-center gap-20 bg-[#14181D] rounded-[15px] p-10 w-[50em]" style="border: 1px solid #2C3540;">
+                                <div class="nilai1 flex flex-col items-center text-boxNilai ">
+                                    <span class="font-bold text-5xl">200</span>
+                                    <span class="text-[#A3B7CC] text-1xl">Skin Owned</span>
+                                    
+                                </div> 
+                                <div class="bg-[#88A6C8] py-5 px-[1px]"></div>
+                                <div class="nilai2  flex flex-col items-center text-boxNilai">
+                                    <span class="font-bold text-5xl">151</span>
+                                    <span class="text-[#A3B7CC] text-1xl">Lesson Completed</span>
+                                    
+                                </div>
+                                <div class="bg-[#88A6C8] py-5 px-[1px]"></div>
+                                <div class="nilai3  flex flex-col items-center text-boxNilai">
+                                    <span class="font-bold text-5xl">20</span>
+                                    <span class="text-[#A3B7CC] text-1xl">Game Created</span>
+                                    
+                                </div>
+                            
+                            </div>
+                            <br><br>
+                            <div class="box3 py-10 flex flex-col  items-center gap-20 bg-[#14181D] rounded-[15px] p-10 w-[50em]" style="border: 1px solid #2C3540;">
+                                <div class="container flex gap-5">
+                                    <div class="image-talent">
+                                        <img src="assets/svg/asset_body/profileTalent.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h1 class="text-[2em] font-bold">
+                                            Raden Muhammad
+                                            <br>
+                                            Addin Ashary Ramadhan
+                                        </h1>
+                                        <div class="text-[#94A5BA] text-2xl">S1 - Sistem Informasi</div>
+                                    
+                                        <div class="content mt-2 bg-[#2C3540] rounded-[15px] flex items-center p-5 gap-5">
+                                            <div class="list-1">
+                                                <div class="text-[#94A5BA]">Nim</div>
+                                                <div class="text-[20px] font-normal">200030472</div>
+                                            </div>
+                                            <div class="list-2">
+                                                <div class="text-[#94A5BA]">Tempat Tanggal Lahir</div>
+                                                <div class="text-[20px] font-normal">Dps, 24 Nov 2002</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div flex gap-5 ">
+                                    <div class="download flex gap-5 px-10 py-3 rounded-[30px]" style="border: 1px solid #596C80;">
+                                        <span class="icon">
+                                            <img src="assets/svg/asset_body/iconDownload.svg" alt="">
+                                        </span>
+                                        <span>Download</span>
+                                    </div>
+                                    <div class="download flex gap-5 px-10 py-3 rounded-[30px]" style="border: 1px solid #596C80;">
+                                        <span class="icon">
+                                            <img src="assets/svg/asset_body/iconPrint.svg" alt="">
+                                        </span>
+                                        <span>Print</span>
+                                    </div>
+                                    <div class="download flex gap-5 bg-[#2EA9E5] px-10 py-3 rounded-[30px]" style="border: 1px solid #ffffff;">
+                                        <span class="icon">
+                                            <img src="assets/svg/asset_body/iconZoom.svg" alt="">
+                                        </span>
+                                        <span>Expand</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="illustrator relative pt-80">
+                        <img  src="assets/svg/asset_body/caracter.svg" alt="">
+                    </div>
+                </div>
+            </div>
+           
+       
+        <footer class="bg-[#14181D] px-44 py-[30px] flex justify-between">
+            <div>
+                <div class="icon-medsos flex items-center gap-5">
+                    <span><img src="assets/svg/asset_footer/iconYoutube.svg" alt=""></span>
+                    <span><img src="assets/svg/asset_footer/iconLinkind.svg" alt=""></span>
+                    <span><img src="assets/svg/asset_footer/iconInstagram.svg" alt=""></span>
+                    <span><img src="assets/svg/asset_footer/iconFacebook.svg" alt=""></span>
+                    <span><img src="assets/svg/asset_footer/iconTiktok.svg" alt=""></span>
+                    <span><img src="assets/svg/asset_footer/iconTelegram.svg" alt=""></span>
+                    <span><img src="assets/svg/asset_footer/iconDiscord.svg" alt=""></span>
+                </div>
+                <br>
+                <div class="copy text-[#7A8999] text-[10px]">
+                    Copyright © 2024 STIKOMVERSE. All Rights Reserved
+                </div>
+            </div>
+            <div class="flex items-center gap-5 w-96">
+                <span>
+                    <img src="assets/svg/logo.svg" alt="">
+                </span>
+                <span>
+                    <img src="assets/svg/asset_footer/iconStikom.svg" alt="">
+                  
+                   
+                </span>
+                <span>  <img src="assets/svg/asset_footer/logoWDS.svg" alt=""></span>
+                <span> <img src="assets/svg/asset_footer/iconGores.svg" alt=""></span>
+            </div>
+        </footer>
+    </div>
+    
+    
+</body>
+ <!-- === import script js external === -->
+  <script src="javascript/sistem.js"></script>
+</html> 

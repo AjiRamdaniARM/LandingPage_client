@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* === style navbar component === */
+.coin-navbar {
+    border: 3px solid #F59602;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    /* === style font === */
+    font-weight: 700;
+}
+
+
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.main-menu:hover, nav.main-menu.expanded {
+    width: 250px; /* Lebar diperluas saat hover */
+    overflow: visible;
+}
+
+.main-menu {
+    background: #14181D;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 90px; /* Default width hanya ikon */
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+
+.main-menu>ul {
+    overflow-y: scroll; /* Aktifkan scroll vertikal */
+    overflow-x: hidden; /* Sembunyikan scroll horizontal */
+    margin: 20px 20px; /* Hapus margin samping untuk lebih presisi */
+    height: 80%;
+}
+/* Menyembunyikan scrollbar di webkit (Chrome, Safari) */
+.main-menu>ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Menyembunyikan scrollbar di Firefox */
+.main-menu>ul {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Menyembunyikan scrollbar di IE dan Edge */
+.main-menu>ul {
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.main-menu li {
+    position: relative;
+    display: block;
+    width: 250px;
+     /* Sesuaikan width untuk responsif */
+    margin-bottom: 50px; /* Jarak antar item */
+}
+
+
+.main-menu li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #999;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 10px; /* Tambahkan padding untuk ruang lebih */
+    -webkit-transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all 0.3s ease; /* Tambahkan transisi yang seragam */
+    transition: all 0.3s ease;
+}
+
+.main-menu .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    opacity: 1; /* Pastikan ikon tetap terlihat */
+}
+
+.main-menu .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0; /* Sembunyikan teks saat default */
+    -webkit-transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi untuk opacity dan transform */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-20px); /* Geser teks keluar dari viewport */
+}
+
+.main-menu:hover .nav-text {
+    opacity: 1; /* Tampilkan teks saat hover */
+    transform: translateX(0); /* Kembalikan posisi teks */
+}
+
+.main-menu>ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.no-touch .scrollable.hover {
+    overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y: auto;
+    overflow: visible;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav ul, nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+.name {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
+.box {
+    border: 1px solid #2C3540;
+}
+.text-boxNilai {
+    font-family: "Outfit", sans-serif;
+}
+.content {
+    font-family: "Outfit", sans-serif;
+}
